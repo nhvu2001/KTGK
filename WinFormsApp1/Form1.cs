@@ -6,5 +6,14 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void btndangnhap_Click(object sender, EventArgs e)
+        {
+            if(txtUsername.Text == "admin" && txtpassword.Text == "admin")
+            {
+                Form2 m = new Form2();
+                m.ShowDialog();
+            }
+        }
     }
 }
